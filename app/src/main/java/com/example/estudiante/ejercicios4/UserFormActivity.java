@@ -43,6 +43,7 @@ public class UserFormActivity extends AppCompatActivity {
 
                 setResult(Constansts.RESP_NEW_USER, respuesta);
                 finish();
+                //arregle ifnal
             }
         });
     }
