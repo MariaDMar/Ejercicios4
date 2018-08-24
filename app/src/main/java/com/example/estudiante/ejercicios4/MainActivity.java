@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String name = edtUserFormName.getText().toString();
                 String password = edtPassword.getText().toString();
+
             startActivityForResult(respuesta, Constansts.REQ_NEW_USER);
                 //arregle ifnal
 
