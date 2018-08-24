@@ -10,7 +10,7 @@ import android.widget.EditText;
 public class UserFormActivity extends AppCompatActivity {
 
     private EditText edtUserFormName;
-    private EditText edtUserFormEmail;
+    private EditText edtPassword;
     private EditText edtUserFormUserName;
 
     private Button btnUserFormFinish;
@@ -24,8 +24,7 @@ public class UserFormActivity extends AppCompatActivity {
 
         //Intent solicitud = getIntent();
         edtUserFormName = findViewById(R.id.edt_userform_name);
-        edtUserFormEmail = findViewById(R.id.edt_userform_email);
-        edtUserFormUserName = findViewById(R.id.edt_userform_username);
+
 
         btnUserFormFinish = findViewById(R.id.btn_user_form_finish);
 
@@ -34,12 +33,13 @@ public class UserFormActivity extends AppCompatActivity {
                 Intent respuesta = new Intent();
 
                 String name = edtUserFormName.getText().toString();
-                String email = edtUserFormEmail.getText().toString();
+                String email = edtPassword.getText().toString();
                 String username= edtUserFormUserName.getText().toString();
 
                 respuesta.putExtra("name", name);
-                respuesta.putExtra("email", email);
+                respuesta.putExtra("password", email);
                 respuesta.putExtra("username", username);
+
 
                 setResult(Constansts.RESP_NEW_USER, respuesta);
                 finish();

@@ -4,50 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1c70bf"
     tools:context=".UserFormActivity">
-
-    <EditText
-        android:id="@+id/edt_userform_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="@string/hint_userform_email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintStart_toStartOf="@+id/edt_userform_name"
-        app:layout_constraintTop_toBottomOf="@+id/edt_userform_name" />
-
-    <EditText
-        android:id="@+id/edt_userform_name"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_marginStart="73dp"
-        android:layout_marginTop="137dp"
-        android:ems="10"
-        android:hint="@string/hint_userform_name"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/edt_userform_username"
-        android:layout_width="wrap_content"
-        android:layout_height="43dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="@string/hint_userform_username"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/edt_userform_email"
-        app:layout_constraintTop_toBottomOf="@+id/edt_userform_email" />
 
     <Button
         android:id="@+id/btn_user_form_finish"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:background="#162c76"
+        android:elevation="5dp"
+        android:text="@string/btn_title_userform"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="218dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="43dp"
+        android:text="Este perfil se encuentra bajo construcción. Próximamente disfruta del mejor contenido en esta Actiity"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_user_form_finish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/btn_title_userform"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.458"
+        android:layout_marginBottom="98dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="39dp"
+        android:text="Hola ADMINISTRADOR"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_userform_username" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

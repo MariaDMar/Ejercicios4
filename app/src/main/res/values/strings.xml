@@ -1,12 +1,11 @@
 <resources>
-    <string name="app_name">Ejercicios4</string>
-    <string name="btn_title_main">Ir al formulario</string>
-    <string name="tv_status_main">No completado</string>
+    <string name="app_name">BurgerKing</string>
+    <string name="btn_title_main">INGRESAR</string>
+    <string name="tv_status_main">El usuario  o la contraseña no es correcto</string>
 
-    <string name="hint_userform_name">¿Cómo te llamas?</string>
-    <string name="hint_userform_email">mariadmar@gmail.com</string>
-    <string name="hint_userform_username">mariadmar</string>
+    <string name="hint_userform_name">Usuario</string>
+    <string name="hint_userform_password">password</string>
 
-    <string name="btn_title_userform">Completado</string>
+    <string name="btn_title_userform">Cerrar Sesión</string>
 
 </resources>
