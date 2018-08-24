@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         btn_main_to_form = findViewById(R.id.btn_user_form_finish);
         Log.e("Prueba", ""+btn_main_to_form);
 
+
         btn_main_to_form.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent respuesta = new Intent(getApplicationContext(), UserFormActivity.class);
